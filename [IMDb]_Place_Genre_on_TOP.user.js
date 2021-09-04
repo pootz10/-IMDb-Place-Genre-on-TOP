@@ -8,8 +8,8 @@
 // @history     v1.0 - first code
 // @license     GNU
 // @require     http://code.jquery.com/jquery-2.1.4.min.js
-// @updateURL   https://github.com/pootz10/[IMDb]-Place-Genre-on-TOP/raw/master/[IMDb]_Place_Genre_on_TOP.user.js
-// @downloadURL https://github.com/pootz10/[IMDb]-Place-Genre-on-TOP/raw/master/[IMDb]_Place_Genre_on_TOP.user.js
+// @updateURL   https://github.com/pootz10/IMDb-Place-Genre-on-TOP/raw/master/IMDb_Place_Genre_on_TOP.user.js
+// @downloadURL https://github.com/pootz10/IMDb-Place-Genre-on-TOP/raw/master/IMDb_Place_Genre_on_TOP.user.js
 // @grant       GM_addStyle
 // ==/UserScript==
 
