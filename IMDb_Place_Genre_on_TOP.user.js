@@ -4,7 +4,8 @@
 // @description Place Genres above, between title and rating, v1.1 add movie release date too
 // @include     http*://www.imdb.com/title/*
 // @exclude     https://www.imdb.com/title/*/reference
-// @version     v1.3
+// @version     v1.4
+// @history     v1.4 - fix genre
 // @history     v1.3 - add MetaScore rating (when exists) left side of imdb rate
 // @history     v1.2 - fixed issue where the script fails while opening multiple imdb's links at the same time
 // @history     v1.1 - add movie release date too
@@ -23,7 +24,7 @@ const changeHeader = async() => {
     date.css("::before");
 
     var genre = await $('li[data-testid="storyline-genres"]').text();
-    genre = genre.replaceAll(/(Genres?)/gm, '<b>Genre: <font color="aqua">');
+    genre = genre.replaceAll(/(Genres?|Gêneros?)/gm, '<b>Genre: <font color="aqua">');
     genre = genre.replaceAll(/((?<!\-)[A-Z])/gm, " $1");
     genre = genre + "</b></font>";
 
@@ -55,5 +56,8 @@ GM_addStyle (`
                 border-radius: 50%;
                 vertical-align: middle;
                 background-color: currentColor;
+    }
+    .ipc-chip {
+                color: #5799ef;
     }
 ` );
